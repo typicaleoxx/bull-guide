@@ -3,13 +3,40 @@ import os
 import re
 from pathlib import Path
 
+import chromadb
+from sentence_transformers import SentenceTransformer
+
 RAW_DIR = "documents/raw"
 CLEANED_DIR = "documents/cleaned"
 CHUNKS_FILE = "data/chunks.json"
+CHROMA_DIR = "data/chroma"
+CHROMA_COLLECTION = "bull_guide"
 
 CHUNK_TARGET = 700
 CHUNK_MAX = 1000
 CHUNK_OVERLAP = 120
+
+# module-level cache so the model and collection load once per process
+_model = None
+_collection = None
+
+
+def _get_model():
+    global _model
+    if _model is None:
+        _model = SentenceTransformer("all-MiniLM-L6-v2")
+    return _model
+
+
+def _get_collection():
+    global _collection
+    if _collection is None:
+        client = chromadb.PersistentClient(path=CHROMA_DIR)
+        _collection = client.get_or_create_collection(CHROMA_COLLECTION)
+    return _collection
+
+
+# ── ingestion and chunking ────────────────────────────────────────────────────
 
 
 def load_documents(raw_dir):
@@ -166,8 +193,106 @@ def run_pipeline():
         print(f"    {c['text'][:220].replace(chr(10), ' ')}")
 
 
+# ── embedding and retrieval ───────────────────────────────────────────────────
+
+
+def index_chunks():
+    """
+    load chunks from json, embed with all-MiniLM-L6-v2, and upsert into chromadb.
+    upsert is idempotent: running this again will overwrite existing records
+    with the same id rather than inserting duplicates.
+    """
+    with open(CHUNKS_FILE, encoding="utf-8") as f:
+        chunks = json.load(f)
+
+    print(f"embedding {len(chunks)} chunks with all-MiniLM-L6-v2...")
+    model = _get_model()
+    texts = [c["text"] for c in chunks]
+    embeddings = model.encode(texts, show_progress_bar=True)
+
+    collection = _get_collection()
+
+    # build deterministic ids from source filename and chunk index
+    ids = [f"{c['source']}_{c['chunk_index']}" for c in chunks]
+    metadatas = [
+        {
+            "source": c["source"],
+            "title": c["title"],
+            "topic": c["topic"],
+            "chunk_index": c["chunk_index"],
+        }
+        for c in chunks
+    ]
+
+    collection.upsert(
+        ids=ids,
+        documents=texts,
+        embeddings=[e.tolist() for e in embeddings],
+        metadatas=metadatas,
+    )
+
+    print(f"indexed {collection.count()} chunks in chromadb at {CHROMA_DIR}")
+
+
+def retrieve(query, top_k=5):
+    """
+    embed the query with the same model used at index time, then run cosine
+    similarity search against the chromadb collection.
+    returns a list of result dicts ordered from most to least relevant.
+    """
+    model = _get_model()
+    query_embedding = model.encode([query])[0].tolist()
+
+    collection = _get_collection()
+    results = collection.query(
+        query_embeddings=[query_embedding],
+        n_results=top_k,
+        include=["documents", "metadatas", "distances"],
+    )
+
+    hits = []
+    for doc, meta, dist in zip(
+        results["documents"][0],
+        results["metadatas"][0],
+        results["distances"][0],
+    ):
+        hits.append({
+            "text": doc,
+            "source": meta["source"],
+            "title": meta["title"],
+            "topic": meta["topic"],
+            "chunk_index": int(meta["chunk_index"]),
+            "distance": round(dist, 4),
+        })
+    return hits
+
+
+def test_retrieval():
+    queries = [
+        "What do students find difficult about Data Structures?",
+        "How should students prepare for Computer Logic exams?",
+        "What problems happen during software engineering group projects?",
+    ]
+
+    print("\n--- retrieval test ---")
+    for query in queries:
+        print(f"\nquery: {query}")
+        hits = retrieve(query, top_k=5)
+        for rank, hit in enumerate(hits, start=1):
+            preview = hit["text"][:160].replace("\n", " ")
+            print(f"  [{rank}] {hit['source']}  distance: {hit['distance']:.4f}")
+            print(f"       {preview}")
+
+
+# ── entry point ───────────────────────────────────────────────────────────────
+
+
 def main():
-    run_pipeline()
+    # run ingestion and chunking only if chunks file does not exist yet
+    if not Path(CHUNKS_FILE).exists():
+        run_pipeline()
+    index_chunks()
+    test_retrieval()
 
 
 if __name__ == "__main__":
