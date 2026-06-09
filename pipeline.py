@@ -198,10 +198,12 @@ def run_pipeline():
 
 def index_chunks():
     """
-    load chunks from json, embed with all-MiniLM-L6-v2, and upsert into chromadb.
-    upsert is idempotent: running this again will overwrite existing records
-    with the same id rather than inserting duplicates.
+    load chunks from json, embed with all-MiniLM-L6-v2, and store in chromadb.
+    the collection is dropped and recreated on every call so repeated runs
+    never accumulate duplicate records.
     """
+    global _collection
+
     with open(CHUNKS_FILE, encoding="utf-8") as f:
         chunks = json.load(f)
 
@@ -210,9 +212,15 @@ def index_chunks():
     texts = [c["text"] for c in chunks]
     embeddings = model.encode(texts, show_progress_bar=True)
 
-    collection = _get_collection()
+    # drop and recreate the collection so the count is always exactly len(chunks)
+    client = chromadb.PersistentClient(path=CHROMA_DIR)
+    try:
+        client.delete_collection(CHROMA_COLLECTION)
+    except Exception:
+        pass
+    collection = client.create_collection(CHROMA_COLLECTION)
+    _collection = collection  # keep module-level cache in sync with retrieve()
 
-    # build deterministic ids from source filename and chunk index
     ids = [f"{c['source']}_{c['chunk_index']}" for c in chunks]
     metadatas = [
         {
@@ -224,7 +232,7 @@ def index_chunks():
         for c in chunks
     ]
 
-    collection.upsert(
+    collection.add(
         ids=ids,
         documents=texts,
         embeddings=[e.tolist() for e in embeddings],
