@@ -1,0 +1,13 @@
+title: Student Experiences with Discrete Mathematics
+source: Locally created synthetic sample document based on common computer science student experiences
+topic: Navigating Discrete Mathematics as a CS student
+
+Discrete Mathematics surprises many students who expect it to feel like programming. Instead it introduces formal logic, set theory, proofs, combinatorics, and graph theory. For students who have only taken calculus before, the style of thinking required is very different and can feel unfamiliar at first.
+
+Proofs are the part that trips up the most students. Writing a formal proof by induction or contradiction requires following a specific structure, and small logical gaps can cost significant points. The best way to get comfortable is to write out full proofs by hand repeatedly, not just check whether you can follow someone else's steps.
+
+Logic sections tend to move fast. Truth tables, logical equivalences, and predicate logic all build on each other quickly. Falling behind in the first two weeks of logic material makes later sections on proof techniques significantly harder. Consistent daily review is more effective than weekend review sessions.
+
+Many students find that discrete math becomes more interesting once they see the connections to CS topics like algorithm analysis and Boolean circuits. Graph theory in particular maps directly to problems in networking and data structures courses, which makes the material feel more grounded.
+
+One practical tip is to read the textbook before lecture rather than after. Discrete math lectures often assume you have seen the definitions once already. Coming in with even a rough familiarity with the terms means you can focus on understanding the examples rather than just copying notation.
