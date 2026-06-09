@@ -1,0 +1,13 @@
+title: Advice for CS Course Registration
+source: Locally created synthetic sample document based on common computer science student experiences
+topic: Navigating course registration as a computer science student
+
+Course registration is one of the most stressful recurring events in a CS student's semester, especially in the middle years when prerequisite chains start to constrain your options. Planning your schedule two or three semesters ahead, not just the next one, makes a significant difference in whether you can take courses in the right order without delays to graduation.
+
+Know which courses fill fastest at your school and register for them the moment your registration window opens. Upper-division electives in areas like machine learning, cybersecurity, and mobile development tend to cap out within hours. If you miss the window, get on the waitlist immediately and email the instructor to express your interest.
+
+Prerequisites matter and advisors enforce them for good reasons. Taking a course without the expected background almost always leads to struggling from week one. If you are unsure whether you are ready for a course, ask the instructor directly rather than assuming you can catch up during the semester.
+
+Balancing course load requires honest self-assessment. A schedule with four technical CS courses and one elective is manageable for some students and overwhelming for others depending on work commitments, health, and learning pace. Students who retake courses after burning out generally wish they had taken one fewer class in the semester that broke them.
+
+Try to include at least one course per semester that genuinely interests you, even if it is a free elective outside your major. Staying engaged with something you chose for curiosity rather than requirement helps sustain motivation through the harder required courses.

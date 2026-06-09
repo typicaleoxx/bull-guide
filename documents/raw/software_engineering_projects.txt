@@ -1,0 +1,13 @@
+title: Experiences with Software Engineering Group Projects
+source: Locally created synthetic sample document based on common computer science student experiences
+topic: Managing team software development projects in a SE course
+
+Software Engineering courses are structured differently from most other CS classes. Instead of individual assignments and exams, a significant portion of the grade often depends on a semester-long group project. Students build a full application using processes like Agile or Scrum, hold sprint reviews, and document their design decisions.
+
+Version control becomes essential from day one. Teams that do not establish a clear Git branching strategy in the first week often face painful merge conflicts later. A simple agreement, such as always working on feature branches and reviewing pull requests before merging to main, can prevent a lot of avoidable problems.
+
+Communication is as important as coding in this course. Quiet team members and unclear task ownership are the most common sources of friction. Holding a short check-in at least twice a week, even just 15 minutes over a call, keeps everyone aligned and surfaces blockers before they become serious.
+
+Requirements and documentation get underestimated. Students focused on coding often skip writing detailed user stories or updating their design documents, and then struggle to demonstrate what their system is supposed to do during presentations. Keeping documentation current as you build is easier than reconstructing it at the end.
+
+Many students say this course was one of the most practical they took in their CS program. The experience of negotiating deadlines, splitting work fairly, and shipping something real prepared them better for internships than any individual programming assignment.
