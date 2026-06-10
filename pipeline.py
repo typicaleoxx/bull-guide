@@ -4,7 +4,11 @@ import re
 from pathlib import Path
 
 import chromadb
+from dotenv import load_dotenv
+from groq import Groq
 from sentence_transformers import SentenceTransformer
+
+load_dotenv()
 
 RAW_DIR = "documents/raw"
 CLEANED_DIR = "documents/cleaned"
@@ -273,6 +277,65 @@ def retrieve(query, top_k=5):
             "distance": round(dist, 4),
         })
     return hits
+
+
+def ask(question):
+    """
+    retrieve relevant chunks then generate a grounded answer via groq.
+    the model is instructed to answer only from the provided context and to
+    return a fixed refusal sentence when the context is not sufficient.
+    """
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    if not api_key or api_key == "your_key_here":
+        raise ValueError(
+            "GROQ_API_KEY is not set. Copy .env.example to .env and add your key."
+        )
+
+    hits = retrieve(question, top_k=5)
+
+    # format retrieved chunks as numbered context excerpts
+    context_parts = []
+    for i, hit in enumerate(hits, start=1):
+        context_parts.append(f"[{i}] Source: {hit['source']}\n{hit['text']}")
+    context = "\n\n".join(context_parts)
+
+    system_prompt = (
+        "You are an assistant for the Bull Guide, an unofficial computer science student course guide.\n\n"
+        "Answer the user's question using ONLY the information in the provided context excerpts.\n"
+        "Do not use any knowledge from your training data.\n"
+        "Do not infer, guess, or add information that is not explicitly stated in the excerpts.\n\n"
+        "If the context does not contain enough information to answer the question, "
+        "respond with this sentence exactly and nothing else:\n"
+        "The available documents do not provide enough information to answer this question."
+    )
+
+    user_message = f"Context excerpts:\n\n{context}\n\nQuestion: {question}"
+
+    client = Groq(api_key=api_key)
+    response = client.chat.completions.create(
+        model="llama-3.3-70b-versatile",
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        temperature=0.0,
+    )
+
+    answer = response.choices[0].message.content.strip()
+
+    # build source list from retrieved metadata; preserve order, no duplicates
+    seen = set()
+    sources = []
+    for hit in hits:
+        if hit["source"] not in seen:
+            seen.add(hit["source"])
+            sources.append(hit["source"])
+
+    return {
+        "answer": answer,
+        "sources": sources,
+        "retrieved_chunks": hits,
+    }
 
 
 def test_retrieval():
