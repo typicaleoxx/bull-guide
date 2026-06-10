@@ -1,0 +1,201 @@
+[
+  {
+    "id": 1,
+    "question": "What do students find difficult about Data Structures?",
+    "expected": "Students struggle with recursion (tracing calls), pointers and references in linked structures, and understanding which structure is most appropriate for a given situation.",
+    "answer": "According to the context excerpts, students find the following aspects of Data Structures difficult: \n\n1. Recursion: Students struggle to trace several recursive calls at once.\n2. Pointers and references: Especially when implementing linked structures, small mistakes can break the entire structure.\n\nThese difficulties can be alleviated by techniques such as drawing the call stack by hand, identifying the base case before writing code, and drawing each node and pointer connection before changing the code.",
+    "sources": [
+      "data_structures_experiences.txt",
+      "data_structures_exam_advice.txt",
+      "computer_logic_experiences.txt",
+      "programming_study_advice.txt"
+    ],
+    "error": null,
+    "retrieved_chunks": [
+      {
+        "source": "data_structures_experiences.txt",
+        "distance": 0.607,
+        "text_preview": "Students often describe Data Structures as the point where programming becomes less about syntax and more about choosing the correct way to organize information. The course may begin with familiar structures such as arrays and lists, but the difficul"
+      },
+      {
+        "source": "data_structures_experiences.txt",
+        "distance": 0.7796,
+        "text_preview": "er can break the entire structure. Students recommend drawing each node and pointer connection before changing the code.\n\nMany students say the course becomes manageable when they implement each structure from scratch and test every operation separat"
+      },
+      {
+        "source": "data_structures_exam_advice.txt",
+        "distance": 0.8002,
+        "text_preview": "Students recommend beginning exam preparation several days before the test instead of reviewing everything in one night. Data Structures exams often combine conceptual questions, code tracing, runtime analysis, and short implementation problems.\n\nA u"
+      },
+      {
+        "source": "computer_logic_experiences.txt",
+        "distance": 0.9207,
+        "text_preview": "Students describe Computer Logic and Design as a course that connects Boolean algebra with physical digital circuits. Early topics often include binary numbers, logic gates, truth tables, Boolean expressions, and simplification.\n\nBoolean simplificati"
+      },
+      {
+        "source": "programming_study_advice.txt",
+        "distance": 0.9982,
+        "text_preview": "Students consistently recommend writing code instead of only watching tutorials or reading examples. Programming knowledge becomes reliable when a student can solve a problem without copying an existing solution.\n\nA useful study routine begins with a"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What do students recommend for preparing for Computer Logic exams?",
+    "expected": "Students recommend practicing complete problems that move from a verbal requirement to a truth table, a simplified Boolean expression, and a circuit diagram. Rereading lecture notes alone is not enough.",
+    "answer": "Students recommend practicing complete problems that move from a verbal requirement to a truth table, simplified expression, and circuit diagram for Computer Logic exams. They also suggest checking the simplified result against the original truth table, especially when using Karnaugh maps. Additionally, writing one transformation per line when simplifying Boolean expressions can make the reasoning easier to check. Rereading lecture notes alone is not considered enough practice for this type of problem.",
+    "sources": [
+      "computer_logic_experiences.txt",
+      "data_structures_exam_advice.txt",
+      "programming_study_advice.txt",
+      "operating_systems_experiences.txt"
+    ],
+    "error": null,
+    "retrieved_chunks": [
+      {
+        "source": "computer_logic_experiences.txt",
+        "distance": 0.7845,
+        "text_preview": "Students describe Computer Logic and Design as a course that connects Boolean algebra with physical digital circuits. Early topics often include binary numbers, logic gates, truth tables, Boolean expressions, and simplification.\n\nBoolean simplificati"
+      },
+      {
+        "source": "data_structures_exam_advice.txt",
+        "distance": 0.8852,
+        "text_preview": "Students recommend beginning exam preparation several days before the test instead of reviewing everything in one night. Data Structures exams often combine conceptual questions, code tracing, runtime analysis, and short implementation problems.\n\nA u"
+      },
+      {
+        "source": "computer_logic_experiences.txt",
+        "distance": 0.9971,
+        "text_preview": " and should be as large as possible. Students recommend checking the simplified result against the original truth table.\n\nSequential circuits are often harder than combinational circuits because outputs depend on both current inputs and stored state."
+      },
+      {
+        "source": "programming_study_advice.txt",
+        "distance": 1.002,
+        "text_preview": "Students consistently recommend writing code instead of only watching tutorials or reading examples. Programming knowledge becomes reliable when a student can solve a problem without copying an existing solution.\n\nA useful study routine begins with a"
+      },
+      {
+        "source": "operating_systems_experiences.txt",
+        "distance": 1.0507,
+        "text_preview": "e. Race conditions, locks, semaphores, and critical sections require students to reason about multiple execution orders.\n\nVirtual memory is another challenging area. Students need to understand addresses, pages, frames, page tables, translation, and "
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What problems commonly occur during software engineering group projects?",
+    "expected": "Common problems include coordination failures, uneven workloads, integration errors when team members work on separate branches without agreeing on interfaces, and scope creep where optional features take priority over required functionality.",
+    "answer": "According to the context excerpts, the following problems commonly occur during software engineering group projects:\n\n1. Coordination problems, such as unclear responsibilities, deadlines, and interfaces.\n2. Uneven workloads, where one member may complete most of the implementation while others contribute late or submit work that does not integrate.\n3. Integration problems, which appear when team members work on separate branches without agreeing on data formats or function interfaces.\n4. Version control problems, which occur when team members work directly on the same branch.\n5. Scope control issues, where teams spend too much time adding optional features while required functionality remains incomplete.\n6. Communication problems, such as not informing the group early enough when a task becomes blocked.\n7. Inconsistent naming, input formats, environment variables, or dependency versions, which can cause features to fail when combined.",
+    "sources": [
+      "software_engineering_projects.txt",
+      "group_project_advice.txt",
+      "programming_study_advice.txt"
+    ],
+    "error": null,
+    "retrieved_chunks": [
+      {
+        "source": "software_engineering_projects.txt",
+        "distance": 0.6593,
+        "text_preview": "Students often report that the hardest part of a software engineering project is coordination rather than programming. A team can contain capable developers and still struggle if responsibilities, deadlines, and interfaces are unclear.\n\nUneven worklo"
+      },
+      {
+        "source": "group_project_advice.txt",
+        "distance": 0.7871,
+        "text_preview": "Students recommend discussing expectations at the beginning of a group project. The team should agree on communication channels, meeting times, task ownership, coding conventions, and how missed deadlines will be handled.\n\nLarge tasks should be divid"
+      },
+      {
+        "source": "group_project_advice.txt",
+        "distance": 0.9759,
+        "text_preview": "mend creating separate branches, making focused commits, and reviewing changes before merging them into the main branch.\n\nCommunication should happen before a task becomes blocked. A student who cannot complete an assignment should tell the group ear"
+      },
+      {
+        "source": "software_engineering_projects.txt",
+        "distance": 1.0217,
+        "text_preview": "racts early, using pull requests, and merging small changes regularly instead of combining everything near the deadline.\n\nScope control is also important. Teams sometimes spend too much time adding optional features while required functionality remai"
+      },
+      {
+        "source": "programming_study_advice.txt",
+        "distance": 1.2424,
+        "text_preview": " type problem may cause several additional messages. Printing intermediate values can help locate incorrect assumptions.\n\nSpaced practice is more effective than one long session before a deadline. Working for a short period on several days gives stud"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What advice do students give for balancing coursework with an internship?",
+    "expected": "Students recommend avoiding multiple project-heavy courses in the same semester, using weekly time blocks to protect study time, starting assignments early to absorb unexpected work tasks, and communicating scheduling needs to supervisors and classmates in advance.",
+    "answer": "Students give the following advice for balancing coursework with an internship: \n\n1. Avoid taking several project-heavy courses at the same time.\n2. Review previous syllabi to identify courses with weekly programming assignments, group projects, or large final deliverables.\n3. Use weekly time blocks to protect study time and schedule specific periods for lectures, assignments, interview preparation, exercise, and rest.\n4. Start assignments early, as unexpected work tasks or technical bugs can remove the only remaining study period before a deadline.\n5. Communicate early with supervisors and project teammates to avoid scheduling conflicts and notify classmates of work obligations that may affect group meetings.\n6. Maintain sleep and recovery time, as a schedule that depends on repeated late nights can reduce concentration, programming accuracy, and exam performance.",
+    "sources": [
+      "internship_course_balance.txt",
+      "software_engineering_projects.txt",
+      "course_registration_advice.txt",
+      "group_project_advice.txt"
+    ],
+    "error": null,
+    "retrieved_chunks": [
+      {
+        "source": "internship_course_balance.txt",
+        "distance": 0.8796,
+        "text_preview": "Students who combine an internship with computer science courses often report that time management becomes more important than total motivation. Work, lectures, assignments, commuting, and meetings can create several small deadlines during the same w"
+      },
+      {
+        "source": "internship_course_balance.txt",
+        "distance": 1.0931,
+        "text_preview": "eriods for lectures, assignments, interview preparation, exercise, and rest instead of depending on unplanned free time.\n\nStarting assignments early is especially important when working. An unexpected work task or technical bug can remove the only re"
+      },
+      {
+        "source": "software_engineering_projects.txt",
+        "distance": 1.2084,
+        "text_preview": "Students often report that the hardest part of a software engineering project is coordination rather than programming. A team can contain capable developers and still struggle if responsibilities, deadlines, and interfaces are unclear.\n\nUneven worklo"
+      },
+      {
+        "source": "course_registration_advice.txt",
+        "distance": 1.2555,
+        "text_preview": "Students recommend checking prerequisites and degree requirements before registration opens. A course may appear available in the schedule but still require a specific prerequisite, laboratory section, or department approval.\n\nIt is useful to prepare"
+      },
+      {
+        "source": "group_project_advice.txt",
+        "distance": 1.3151,
+        "text_preview": "Students recommend discussing expectations at the beginning of a group project. The team should agree on communication channels, meeting times, task ownership, coding conventions, and how missed deadlines will be handled.\n\nLarge tasks should be divid"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which parking garage is best for biology students?",
+    "expected": "The available documents do not provide enough information to answer this question.",
+    "answer": "The available documents do not provide enough information to answer this question.",
+    "sources": [
+      "course_registration_advice.txt",
+      "internship_course_balance.txt",
+      "group_project_advice.txt",
+      "operating_systems_experiences.txt"
+    ],
+    "error": null,
+    "retrieved_chunks": [
+      {
+        "source": "course_registration_advice.txt",
+        "distance": 1.5204,
+        "text_preview": "Students recommend checking prerequisites and degree requirements before registration opens. A course may appear available in the schedule but still require a specific prerequisite, laboratory section, or department approval.\n\nIt is useful to prepare"
+      },
+      {
+        "source": "internship_course_balance.txt",
+        "distance": 1.5575,
+        "text_preview": "Students who combine an internship with computer science courses often report that time management becomes more important than total motivation. Work, lectures, assignments, commuting, and meetings can create several small deadlines during the same w"
+      },
+      {
+        "source": "group_project_advice.txt",
+        "distance": 1.5944,
+        "text_preview": "Students recommend discussing expectations at the beginning of a group project. The team should agree on communication channels, meeting times, task ownership, coding conventions, and how missed deadlines will be handled.\n\nLarge tasks should be divid"
+      },
+      {
+        "source": "internship_course_balance.txt",
+        "distance": 1.6165,
+        "text_preview": "eriods for lectures, assignments, interview preparation, exercise, and rest instead of depending on unplanned free time.\n\nStarting assignments early is especially important when working. An unexpected work task or technical bug can remove the only re"
+      },
+      {
+        "source": "operating_systems_experiences.txt",
+        "distance": 1.6205,
+        "text_preview": "e. Race conditions, locks, semaphores, and critical sections require students to reason about multiple execution orders.\n\nVirtual memory is another challenging area. Students need to understand addresses, pages, frames, page tables, translation, and "
+      }
+    ]
+  }
+]

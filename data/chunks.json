@@ -1,177 +1,142 @@
 [
   {
     "source": "computer_logic_experiences.txt",
-    "title": "Student Experiences with Computer Logic",
-    "topic": "Learning Boolean logic, circuits, and digital design",
+    "title": "Computer Logic and Design Student Experiences",
+    "topic": "Computer Logic and Design",
     "chunk_index": 0,
-    "text": "Computer Logic, sometimes called Digital Logic or Logic Design, introduces how hardware works at a low level. The course covers Boolean algebra, logic gates, truth tables, Karnaugh maps, combinational circuits, and often sequential circuits like flip-flops and state machines. Students who plan to study computer architecture or embedded systems find this course especially relevant.\n\nThe biggest early challenge is connecting algebra to physical circuits. Knowing that AND, OR, and NOT gates correspond to multiplication, addition, and complement in Boolean algebra is a starting point, but students need practice building and simplifying circuits before that connection feels automatic. Karnaugh maps are a tool that many students underestimate until exam time."
+    "text": "Students describe Computer Logic and Design as a course that connects Boolean algebra with physical digital circuits. Early topics often include binary numbers, logic gates, truth tables, Boolean expressions, and simplification.\n\nBoolean simplification is a common source of mistakes. Students may know individual identities but apply them incorrectly when several variables are involved. Writing one transformation per line makes the reasoning easier to check.\n\nKarnaugh maps can make simplification faster, but students sometimes group cells incorrectly. Valid groups must contain powers of two, may wrap around the edges, and should be as large as possible. Students recommend checking the simplified result against the original truth table."
   },
   {
     "source": "computer_logic_experiences.txt",
-    "title": "Student Experiences with Computer Logic",
-    "topic": "Learning Boolean logic, circuits, and digital design",
+    "title": "Computer Logic and Design Student Experiences",
+    "topic": "Computer Logic and Design",
     "chunk_index": 1,
-    "text": "cuits before that connection feels automatic. Karnaugh maps are a tool that many students underestimate until exam time.\n\nLab sections vary by school, but most require students to build and test circuits using simulation software or physical breadboards. Paying attention during lab, even when it feels repetitive, helps reinforce concepts that can seem abstract from lecture alone.\n\nSequential circuits tend to be the hardest part for most students. State machine diagrams require you to think about behavior over time, which is a different skill from the combinational logic covered earlier in the course. Drawing clean state diagrams and converting them to truth tables is worth practicing well before the relevant exam."
-  },
-  {
-    "source": "computer_logic_experiences.txt",
-    "title": "Student Experiences with Computer Logic",
-    "topic": "Learning Boolean logic, circuits, and digital design",
-    "chunk_index": 2,
-    "text": "rse. Drawing clean state diagrams and converting them to truth tables is worth practicing well before the relevant exam.\n\nStudents recommend forming a group specifically for homework problems in this course. Many circuit problems have multiple valid solutions, and comparing your design with a classmate often reveals simpler approaches you would not find by working alone."
+    "text": " and should be as large as possible. Students recommend checking the simplified result against the original truth table.\n\nSequential circuits are often harder than combinational circuits because outputs depend on both current inputs and stored state. Flip flops, registers, counters, and state machines require students to track changes across clock cycles.\n\nFor exams, students recommend practicing complete problems that move from a verbal requirement to a truth table, simplified expression, and circuit diagram. Rereading lecture notes alone does not provide enough practice for this type of problem."
   },
   {
     "source": "course_registration_advice.txt",
-    "title": "Advice for CS Course Registration",
-    "topic": "Navigating course registration as a computer science student",
+    "title": "Computer Science Course Registration Advice",
+    "topic": "Course Registration",
     "chunk_index": 0,
-    "text": "Course registration is one of the most stressful recurring events in a CS student's semester, especially in the middle years when prerequisite chains start to constrain your options. Planning your schedule two or three semesters ahead, not just the next one, makes a significant difference in whether you can take courses in the right order without delays to graduation.\n\nKnow which courses fill fastest at your school and register for them the moment your registration window opens. Upper-division electives in areas like machine learning, cybersecurity, and mobile development tend to cap out within hours. If you miss the window, get on the waitlist immediately and email the instructor to express your interest."
+    "text": "Students recommend checking prerequisites and degree requirements before registration opens. A course may appear available in the schedule but still require a specific prerequisite, laboratory section, or department approval.\n\nIt is useful to prepare more than one possible schedule. Preferred sections may fill quickly, and required courses may overlap. Students often create a primary schedule and one or two backup combinations before their registration time.\n\nStudents should consider workload in addition to credit hours. Three programming intensive courses may require more time than a schedule containing a mixture of technical and general education courses.\n\nWaitlists can change during the first week of the semester, but students should not assume that a seat will become available. They recommend registering for a reasonable backup course while monitoring the preferred section."
   },
   {
     "source": "course_registration_advice.txt",
-    "title": "Advice for CS Course Registration",
-    "topic": "Navigating course registration as a computer science student",
+    "title": "Computer Science Course Registration Advice",
+    "topic": "Course Registration",
     "chunk_index": 1,
-    "text": "within hours. If you miss the window, get on the waitlist immediately and email the instructor to express your interest.\n\nPrerequisites matter and advisors enforce them for good reasons. Taking a course without the expected background almost always leads to struggling from week one. If you are unsure whether you are ready for a course, ask the instructor directly rather than assuming you can catch up during the semester.\n\nBalancing course load requires honest self-assessment. A schedule with four technical CS courses and one elective is manageable for some students and overwhelming for others depending on work commitments, health, and learning pace. Students who retake courses after burning out generally wish they had taken one fewer class in the semester that broke them."
-  },
-  {
-    "source": "course_registration_advice.txt",
-    "title": "Advice for CS Course Registration",
-    "topic": "Navigating course registration as a computer science student",
-    "chunk_index": 2,
-    "text": "ents who retake courses after burning out generally wish they had taken one fewer class in the semester that broke them.\n\nTry to include at least one course per semester that genuinely interests you, even if it is a free elective outside your major. Staying engaged with something you chose for curiosity rather than requirement helps sustain motivation through the harder required courses."
+    "text": "will become available. They recommend registering for a reasonable backup course while monitoring the preferred section.\n\nWhen degree progress is unclear, students recommend reviewing the degree audit and contacting an academic advisor. Advice from other students can explain workload and course order, but official prerequisite and graduation decisions should be verified with the university."
   },
   {
     "source": "data_structures_exam_advice.txt",
-    "title": "Advice for Data Structures Exams",
-    "topic": "Preparing for and taking Data Structures exams",
+    "title": "Data Structures Exam Preparation Advice",
+    "topic": "Data Structures Exams",
     "chunk_index": 0,
-    "text": "Data Structures exams tend to test both conceptual understanding and hands-on problem solving. A typical exam includes tracing through an algorithm by hand, writing or completing code for a given data structure, and analyzing time complexity using Big-O notation. Understanding all three types of questions is important because partial credit is not always given for wrong answers.\n\nThe most common mistake students make is studying from code only. If you can write a linked list insert function but cannot explain why it runs in O(1) for head insertion and O(n) for tail insertion, you will likely miss questions on the exam. Practice explaining your reasoning out loud, as if teaching someone else."
+    "text": "Students recommend beginning exam preparation several days before the test instead of reviewing everything in one night. Data Structures exams often combine conceptual questions, code tracing, runtime analysis, and short implementation problems.\n\nA useful study method is to create a comparison table for arrays, linked lists, stacks, queues, trees, hash tables, heaps, and graphs. The table can include insertion time, deletion time, search time, memory behavior, and common use cases.\n\nCode tracing is especially important. Students should practice following recursive functions, tree traversals, linked list updates, and loops that manipulate indexes or references. Writing the state of each variable after every important line can prevent mistakes."
   },
   {
     "source": "data_structures_exam_advice.txt",
-    "title": "Advice for Data Structures Exams",
-    "topic": "Preparing for and taking Data Structures exams",
+    "title": "Data Structures Exam Preparation Advice",
+    "topic": "Data Structures Exams",
     "chunk_index": 1,
-    "text": "n, you will likely miss questions on the exam. Practice explaining your reasoning out loud, as if teaching someone else.\n\nPast exams are extremely valuable. Most instructors release two or three semesters of old exams, and the question styles tend to repeat. Work through these under timed conditions rather than just reading the solutions. Treat the practice exam like the real thing, including not checking your notes during it.\n\nPay close attention to edge cases. Exams frequently ask what happens when you insert into an empty tree, delete the only node in a list, or pop from an empty stack. These boundary conditions are where many students lose easy points.\n\nOn exam day, read every question fully before starting. Sketch diagrams for tree or graph problems even if the question does not ask for them. A quick visual can prevent logic errors that are hard to catch when working purely in your head. Budget your time and move on if a question is blocking you."
+    "text": "at manipulate indexes or references. Writing the state of each variable after every important line can prevent mistakes.\n\nStudents also recommend practicing Big O analysis without relying only on memorized answers. For each operation, they identify how the amount of work changes as the input grows and whether the algorithm processes one element, all elements, or nested combinations of elements.\n\nBefore the exam, students suggest reviewing mistakes from homework and previous quizzes. Problems that caused confusion during assignments often reveal the same concepts that need additional practice before the test."
   },
   {
     "source": "data_structures_experiences.txt",
-    "title": "Student Experiences with Data Structures",
-    "topic": "Learning and surviving a Data Structures course",
+    "title": "Data Structures Student Experiences",
+    "topic": "Data Structures",
     "chunk_index": 0,
-    "text": "Data Structures is often the first course where students feel the real weight of a computer science degree. The jump from intro programming to thinking about Big-O notation, linked lists, and trees can feel sudden. Most students agree that the first few weeks set the tone, so keeping up with readings and weekly labs from day one matters more than cramming later.\n\nOne pattern that tends to help is drawing things out by hand. Sketching how a binary search tree rotates after an insertion, or tracing a queue through enqueue and dequeue steps, builds intuition that code alone cannot give you. Students who rely only on running code without understanding the underlying structure often struggle on written exams."
+    "text": "Students often describe Data Structures as the point where programming becomes less about syntax and more about choosing the correct way to organize information. The course may begin with familiar structures such as arrays and lists, but the difficulty increases when students start working with linked lists, stacks, queues, trees, hash tables, and graphs.\n\nRecursion is one of the most common difficulties. Students may understand the definition but still struggle to trace several recursive calls at once. Drawing the call stack by hand and identifying the base case before writing code can make recursive problems easier to understand.\n\nPointers and references are another challenge, especially when implementing linked structures. A small mistake involving a null reference, an incorrect link, or an update in the wrong order can break the entire structure. Students recommend drawing each node and pointer connection before changing the code."
   },
   {
     "source": "data_structures_experiences.txt",
-    "title": "Student Experiences with Data Structures",
-    "topic": "Learning and surviving a Data Structures course",
+    "title": "Data Structures Student Experiences",
+    "topic": "Data Structures",
     "chunk_index": 1,
-    "text": ". Students who rely only on running code without understanding the underlying structure often struggle on written exams.\n\nOffice hours in this course are typically more useful than in earlier CS classes because TAs can look at your specific pointer logic or recursive calls and pinpoint where your mental model breaks down. Many students report that a single 20-minute session saved them hours of solo debugging.\n\nThe course usually covers arrays, linked lists, stacks, queues, trees, heaps, and graphs. Hash tables are often included near the end. Understanding the trade-offs between these structures, such as when to use a hash map versus a balanced BST, is the core skill being tested.\n\nStudents who do well tend to review lecture slides the same night they are posted, attempt homework problems before looking at hints, and form small study groups to explain concepts to one another. Teaching a concept to a peer is one of the fastest ways to find gaps in your own understanding."
+    "text": "er can break the entire structure. Students recommend drawing each node and pointer connection before changing the code.\n\nMany students say the course becomes manageable when they implement each structure from scratch and test every operation separately. Writing small tests for insertion, deletion, searching, empty structures, and single element structures helps find mistakes before the code is used in a larger assignment.\n\nStudents also report that memorizing code is not enough. Exams and assignments often require them to compare structures and explain why one is more appropriate than another. Understanding runtime, memory use, and the expected operations is usually more valuable than remembering one implementation."
   },
   {
     "source": "discrete_math_experiences.txt",
-    "title": "Student Experiences with Discrete Mathematics",
-    "topic": "Navigating Discrete Mathematics as a CS student",
+    "title": "Discrete Mathematics Student Experiences",
+    "topic": "Discrete Mathematics",
     "chunk_index": 0,
-    "text": "Discrete Mathematics surprises many students who expect it to feel like programming. Instead it introduces formal logic, set theory, proofs, combinatorics, and graph theory. For students who have only taken calculus before, the style of thinking required is very different and can feel unfamiliar at first.\n\nProofs are the part that trips up the most students. Writing a formal proof by induction or contradiction requires following a specific structure, and small logical gaps can cost significant points. The best way to get comfortable is to write out full proofs by hand repeatedly, not just check whether you can follow someone else's steps.\n\nLogic sections tend to move fast. Truth tables, logical equivalences, and predicate logic all build on each other quickly. Falling behind in the first two weeks of logic material makes later sections on proof techniques significantly harder. Consistent daily review is more effective than weekend review sessions."
+    "text": "Students often find Discrete Mathematics different from earlier mathematics courses because it focuses heavily on reasoning, definitions, and proofs. The course may include logic, sets, functions, relations, counting, probability, induction, graphs, and recurrence relations.\n\nProof writing is a major challenge. Students may understand that a statement is true but struggle to express a complete argument. Common proof techniques include direct proof, contradiction, contrapositive reasoning, induction, and proof by cases.\n\nMathematical induction can be confusing at first because students must separate the base case, induction hypothesis, and induction step. Students recommend writing these three parts clearly instead of combining them into one paragraph."
   },
   {
     "source": "discrete_math_experiences.txt",
-    "title": "Student Experiences with Discrete Mathematics",
-    "topic": "Navigating Discrete Mathematics as a CS student",
+    "title": "Discrete Mathematics Student Experiences",
+    "topic": "Discrete Mathematics",
     "chunk_index": 1,
-    "text": "ctions on proof techniques significantly harder. Consistent daily review is more effective than weekend review sessions.\n\nMany students find that discrete math becomes more interesting once they see the connections to CS topics like algorithm analysis and Boolean circuits. Graph theory in particular maps directly to problems in networking and data structures courses, which makes the material feel more grounded.\n\nOne practical tip is to read the textbook before lecture rather than after. Discrete math lectures often assume you have seen the definitions once already. Coming in with even a rough familiarity with the terms means you can focus on understanding the examples rather than just copying notation."
+    "text": ", and induction step. Students recommend writing these three parts clearly instead of combining them into one paragraph.\n\nCounting problems are also difficult because similar questions may require different techniques. Students need to recognize when order matters, when repetition is allowed, and whether the problem uses permutations, combinations, or the multiplication principle.\n\nStudents report that regular practice is more effective than rereading examples. Working through problems without looking at the solution helps reveal whether they can choose the correct method independently."
   },
   {
     "source": "group_project_advice.txt",
-    "title": "Advice for CS Group Projects",
-    "topic": "How to work effectively in computer science group projects",
+    "title": "Group Project Advice for Computing Students",
+    "topic": "Group Projects",
     "chunk_index": 0,
-    "text": "Group projects in CS courses require skills that are not taught in any lecture: coordination, negotiation, and accountability. Many students find them frustrating at first because the success of the project depends on people outside their own control. Having a plan for collaboration from the first meeting reduces that frustration significantly.\n\nDividing work by module or feature rather than by task type tends to produce better results. Giving one person full ownership of a component, including writing tests and documentation for it, is more efficient than splitting design, coding, and testing among three different people. Ownership creates accountability and reduces the time spent on handoffs."
+    "text": "Students recommend discussing expectations at the beginning of a group project. The team should agree on communication channels, meeting times, task ownership, coding conventions, and how missed deadlines will be handled.\n\nLarge tasks should be divided into smaller deliverables with clear acceptance criteria. Saying that one person owns the backend is too broad. Assigning a specific endpoint, database function, test, or documentation section makes progress easier to verify.\n\nVersion control problems are common when team members work directly on the same branch. Students recommend creating separate branches, making focused commits, and reviewing changes before merging them into the main branch."
   },
   {
     "source": "group_project_advice.txt",
-    "title": "Advice for CS Group Projects",
-    "topic": "How to work effectively in computer science group projects",
+    "title": "Group Project Advice for Computing Students",
+    "topic": "Group Projects",
     "chunk_index": 1,
-    "text": "ding, and testing among three different people. Ownership creates accountability and reduces the time spent on handoffs.\n\nUsing a shared repository correctly is non-negotiable. Everyone should push changes at least once a day during active development periods, and no one should work for three days in isolation and then try to merge everything at once. Small, frequent commits with clear messages make it easier to identify what changed and where a bug was introduced.\n\nAddressing issues with team members early prevents bigger problems. If someone consistently misses check-ins or submits incomplete work, talking about it directly during the project is far better than waiting until peer evaluation. Most instructors expect some friction in group projects and appreciate teams that manage it maturely."
-  },
-  {
-    "source": "group_project_advice.txt",
-    "title": "Advice for CS Group Projects",
-    "topic": "How to work effectively in computer science group projects",
-    "chunk_index": 2,
-    "text": "l peer evaluation. Most instructors expect some friction in group projects and appreciate teams that manage it maturely.\n\nA shared document for meeting notes, decisions, and open questions is one of the simplest things a team can do to stay organized. When disagreements come up about what was agreed upon, a written record resolves them quickly and keeps the team focused on building rather than relitigating old discussions."
+    "text": "mend creating separate branches, making focused commits, and reviewing changes before merging them into the main branch.\n\nCommunication should happen before a task becomes blocked. A student who cannot complete an assignment should tell the group early enough for the team to adjust the plan. Waiting until the deadline transfers the problem to everyone else.\n\nTeams should also reserve time for integration and testing. Features that work separately may fail when combined because of inconsistent names, input formats, environment variables, or dependency versions."
   },
   {
     "source": "internship_course_balance.txt",
-    "title": "Balancing Internships and Coursework",
-    "topic": "Managing academic coursework while doing a CS internship",
+    "title": "Balancing an Internship with Computer Science Courses",
+    "topic": "Internship and Course Balance",
     "chunk_index": 0,
-    "text": "Doing an internship during the semester, as opposed to summer, is increasingly common for CS students but comes with real trade-offs. The work experience is valuable and can lead to return offers, but a 20-hour-per-week part-time internship on top of a full course load often means something has to give. Planning which courses to take during an internship semester is one of the most important decisions you can make.\n\nReduce technical course load during internship semesters when possible. Taking two core CS courses instead of three, and filling the rest with lighter electives or general education requirements, protects your GPA and your mental health. Internship projects often require unexpected overtime during deadlines, and having buffer in your schedule prevents those weeks from becoming crises."
+    "text": "Students who combine an internship with computer science courses often report that time management becomes more important than total motivation. Work, lectures, assignments, commuting, and meetings can create several small deadlines during the same week.\n\nA common recommendation is to avoid taking several project heavy courses at the same time. Students should review previous syllabi when available and identify courses with weekly programming assignments, group projects, or large final deliverables.\n\nWeekly time blocks can protect study time. Students often schedule specific periods for lectures, assignments, interview preparation, exercise, and rest instead of depending on unplanned free time."
   },
   {
     "source": "internship_course_balance.txt",
-    "title": "Balancing Internships and Coursework",
-    "topic": "Managing academic coursework while doing a CS internship",
+    "title": "Balancing an Internship with Computer Science Courses",
+    "topic": "Internship and Course Balance",
     "chunk_index": 1,
-    "text": "uire unexpected overtime during deadlines, and having buffer in your schedule prevents those weeks from becoming crises.\n\nTime blocking is the organizational strategy that students most commonly credit for surviving internship semesters. Treating your internship hours and study hours as non-negotiable blocks in your calendar, rather than fitting them in around each other loosely, keeps both from consuming the time of the other.\n\nBe transparent with your internship manager about your student status. Most tech company internship programs for students expect coursework to coexist with the role and will accommodate reasonable schedule needs. What they do not appreciate is discovering late that a project will be delayed because of midterms you did not mention."
-  },
-  {
-    "source": "internship_course_balance.txt",
-    "title": "Balancing Internships and Coursework",
-    "topic": "Managing academic coursework while doing a CS internship",
-    "chunk_index": 2,
-    "text": " What they do not appreciate is discovering late that a project will be delayed because of midterms you did not mention.\n\nInternships also change how you approach coursework. Concepts that felt abstract in class often click faster when you have seen them applied in a professional context. Many students report coming back to campus after an internship with stronger motivation and clearer career direction."
+    "text": "eriods for lectures, assignments, interview preparation, exercise, and rest instead of depending on unplanned free time.\n\nStarting assignments early is especially important when working. An unexpected work task or technical bug can remove the only remaining study period before a deadline.\n\nStudents also recommend communicating early with supervisors and project teammates. An internship supervisor may be able to avoid scheduling conflicts, while classmates need advance notice when work obligations affect a group meeting.\n\nMaintaining sleep and recovery time is part of the plan. A schedule that depends on repeated late nights may work briefly but usually reduces concentration, programming accuracy, and exam performance."
   },
   {
     "source": "operating_systems_experiences.txt",
-    "title": "Student Experiences with Operating Systems",
-    "topic": "Studying and surviving an Operating Systems course",
+    "title": "Operating Systems Student Experiences",
+    "topic": "Operating Systems",
     "chunk_index": 0,
-    "text": "Operating Systems is widely considered one of the hardest required courses in a CS degree. It covers process management, scheduling algorithms, memory management, virtual memory, file systems, and concurrency. Students who walk in expecting it to be a programming course similar to Data Structures are often surprised by how much theory is involved alongside the implementation work.\n\nConcurrency is the topic that causes the most difficulty. Understanding race conditions, mutex locks, semaphores, and deadlock is hard because bugs do not appear consistently. A program with a race condition might run correctly nine out of ten times, making it easy to miss in testing. Practicing with simple concurrent programs that deliberately trigger race conditions helps build the instincts needed to catch them."
+    "text": "Students often describe Operating Systems as conceptually demanding because it requires them to understand how programs interact with memory, processors, files, and hardware resources. Topics commonly include processes, threads, scheduling, synchronization, virtual memory, file systems, and deadlocks.\n\nStudents with limited C programming experience may struggle with pointers, manual memory management, and debugging low level errors. Reviewing C syntax, arrays, structs, pointers, dynamic allocation, and command line compilation can make the course easier.\n\nConcurrency is one of the most difficult topics. Code that works during one execution may fail during another because thread scheduling can change. Race conditions, locks, semaphores, and critical sections require students to reason about multiple execution orders."
   },
   {
     "source": "operating_systems_experiences.txt",
-    "title": "Student Experiences with Operating Systems",
-    "topic": "Studying and surviving an Operating Systems course",
+    "title": "Operating Systems Student Experiences",
+    "topic": "Operating Systems",
     "chunk_index": 1,
-    "text": "ith simple concurrent programs that deliberately trigger race conditions helps build the instincts needed to catch them.\n\nProjects in OS courses are typically long. Implementing a basic shell, a memory allocator, or parts of a file system can each take 15 to 25 hours for students who are working steadily. Starting at least a week before the deadline is not optional advice in this class.\n\nReading the textbook matters more in this course than in most others. Operating Systems: Three Easy Pieces is a commonly used text that explains concepts clearly with diagrams and pseudocode. Relying only on slides tends to leave gaps that appear on exams.\n\nStudents who performed well consistently mentioned keeping a personal notes file where they summarized each major concept in their own words. Returning to those summaries before exams was faster and more effective than re-reading entire chapters."
+    "text": "e. Race conditions, locks, semaphores, and critical sections require students to reason about multiple execution orders.\n\nVirtual memory is another challenging area. Students need to understand addresses, pages, frames, page tables, translation, and page replacement. Drawing address translation steps can make the process more concrete.\n\nStudents recommend starting programming assignments early because operating systems bugs may not produce clear error messages. Tools such as compiler warnings, debuggers, memory checkers, logs, and small test cases are especially useful."
   },
   {
     "source": "programming_study_advice.txt",
-    "title": "Advice for Studying Programming Courses",
-    "topic": "Effective study habits for introductory and intermediate programming classes",
+    "title": "Programming Course Study Advice",
+    "topic": "Programming Study Habits",
     "chunk_index": 0,
-    "text": "Learning to program well takes consistent practice, not intense last-minute effort. Many students in intro CS courses try to read through examples the night before an assignment is due and then find they cannot apply what they read. Writing code every day, even if only for 30 minutes, builds the problem-solving reflexes that exams and projects demand.\n\nDebugging is a skill that deserves as much attention as writing new code. Students who learn to read error messages carefully, use print statements strategically, and form hypotheses before making changes become much faster programmers over time. Randomly editing code until something works trains bad habits that become harder to break at higher course levels."
+    "text": "Students consistently recommend writing code instead of only watching tutorials or reading examples. Programming knowledge becomes reliable when a student can solve a problem without copying an existing solution.\n\nA useful study routine begins with a small problem. The student writes the expected input and output, divides the problem into steps, implements one step, and tests it before continuing. This makes debugging easier than writing the entire program at once.\n\nStudents also recommend reading error messages carefully. The first error is often more important than later errors because one syntax or type problem may cause several additional messages. Printing intermediate values can help locate incorrect assumptions."
   },
   {
     "source": "programming_study_advice.txt",
-    "title": "Advice for Studying Programming Courses",
-    "topic": "Effective study habits for introductory and intermediate programming classes",
+    "title": "Programming Course Study Advice",
+    "topic": "Programming Study Habits",
     "chunk_index": 1,
-    "text": "time. Randomly editing code until something works trains bad habits that become harder to break at higher course levels.\n\nReading other people's code is underrated as a study method. Looking at well-written solutions to problems you have already attempted shows you patterns and idioms you would not have thought of on your own. Most CS courses post model solutions after the submission deadline, and reviewing them carefully is worth the time.\n\nPractice problems outside of assignments matter. Platforms with coding exercises are available online, and working through problems at a slightly lower difficulty than your current course level is a low-pressure way to build fluency. The goal is not to memorize solutions but to recognize problem types quickly."
-  },
-  {
-    "source": "programming_study_advice.txt",
-    "title": "Advice for Studying Programming Courses",
-    "topic": "Effective study habits for introductory and intermediate programming classes",
-    "chunk_index": 2,
-    "text": "el is a low-pressure way to build fluency. The goal is not to memorize solutions but to recognize problem types quickly.\n\nStudents who struggle with programming courses often improve faster when they explain their code to someone else. Study partners who are at a similar level can catch misunderstandings and ask clarifying questions that improve both students' understanding. Teaching something forces you to be precise in a way that reading and watching videos do not."
+    "text": " type problem may cause several additional messages. Printing intermediate values can help locate incorrect assumptions.\n\nSpaced practice is more effective than one long session before a deadline. Working for a short period on several days gives students more opportunities to encounter mistakes, reflect on them, and remember the solution.\n\nWhen students are stuck, they should create the smallest version of the failing problem. Removing unrelated code can reveal whether the issue comes from input handling, a loop, a condition, a data structure, or an external dependency."
   },
   {
     "source": "software_engineering_projects.txt",
-    "title": "Experiences with Software Engineering Group Projects",
-    "topic": "Managing team software development projects in a SE course",
+    "title": "Software Engineering Group Project Experiences",
+    "topic": "Software Engineering Projects",
     "chunk_index": 0,
-    "text": "Software Engineering courses are structured differently from most other CS classes. Instead of individual assignments and exams, a significant portion of the grade often depends on a semester-long group project. Students build a full application using processes like Agile or Scrum, hold sprint reviews, and document their design decisions.\n\nVersion control becomes essential from day one. Teams that do not establish a clear Git branching strategy in the first week often face painful merge conflicts later. A simple agreement, such as always working on feature branches and reviewing pull requests before merging to main, can prevent a lot of avoidable problems.\n\nCommunication is as important as coding in this course. Quiet team members and unclear task ownership are the most common sources of friction. Holding a short check-in at least twice a week, even just 15 minutes over a call, keeps everyone aligned and surfaces blockers before they become serious."
+    "text": "Students often report that the hardest part of a software engineering project is coordination rather than programming. A team can contain capable developers and still struggle if responsibilities, deadlines, and interfaces are unclear.\n\nUneven workloads are a frequent problem. One member may complete most of the implementation while others contribute late or submit work that does not integrate. Teams reduce this risk by assigning specific issues, documenting ownership, and reviewing progress during short weekly meetings.\n\nIntegration problems commonly appear when team members work on separate branches without agreeing on data formats or function interfaces. Students recommend defining contracts early, using pull requests, and merging small changes regularly instead of combining everything near the deadline."
   },
   {
     "source": "software_engineering_projects.txt",
-    "title": "Experiences with Software Engineering Group Projects",
-    "topic": "Managing team software development projects in a SE course",
+    "title": "Software Engineering Group Project Experiences",
+    "topic": "Software Engineering Projects",
     "chunk_index": 1,
-    "text": "twice a week, even just 15 minutes over a call, keeps everyone aligned and surfaces blockers before they become serious.\n\nRequirements and documentation get underestimated. Students focused on coding often skip writing detailed user stories or updating their design documents, and then struggle to demonstrate what their system is supposed to do during presentations. Keeping documentation current as you build is easier than reconstructing it at the end.\n\nMany students say this course was one of the most practical they took in their CS program. The experience of negotiating deadlines, splitting work fairly, and shipping something real prepared them better for internships than any individual programming assignment."
+    "text": "racts early, using pull requests, and merging small changes regularly instead of combining everything near the deadline.\n\nScope control is also important. Teams sometimes spend too much time adding optional features while required functionality remains incomplete. A better approach is to finish a small working version first and then add improvements only after the core system is stable.\n\nStudents say that clear documentation improves both teamwork and grading. A useful README should explain the project purpose, setup steps, architecture, important decisions, known limitations, and how each major feature can be tested."
   }
 ]

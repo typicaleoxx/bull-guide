@@ -1,0 +1,98 @@
+Bull Guide Evaluation Results
+======================================================================
+
+[1] What do students find difficult about Data Structures?
+
+Expected:
+  Students struggle with recursion (tracing calls), pointers and references in linked structures, and understanding which structure is most appropriate for a given situation.
+
+System answer:
+  According to the context excerpts, students find the following aspects of Data Structures difficult: 
+
+1. Recursion: Students struggle to trace several recursive calls at once.
+2. Pointers and references: Especially when implementing linked structures, small mistakes can break the entire structure.
+
+These difficulties can be alleviated by techniques such as drawing the call stack by hand, identifying the base case before writing code, and drawing each node and pointer connection before changing the code.
+
+Sources: data_structures_experiences.txt, data_structures_exam_advice.txt, computer_logic_experiences.txt, programming_study_advice.txt
+
+Top retrieved chunk: data_structures_experiences.txt (distance: 0.6070)
+  Students often describe Data Structures as the point where programming becomes less about syntax and more about choosing the correct way to organize information. The course may begin with familiar str
+
+----------------------------------------------------------------------
+
+[2] What do students recommend for preparing for Computer Logic exams?
+
+Expected:
+  Students recommend practicing complete problems that move from a verbal requirement to a truth table, a simplified Boolean expression, and a circuit diagram. Rereading lecture notes alone is not enough.
+
+System answer:
+  Students recommend practicing complete problems that move from a verbal requirement to a truth table, simplified expression, and circuit diagram for Computer Logic exams. They also suggest checking the simplified result against the original truth table, especially when using Karnaugh maps. Additionally, writing one transformation per line when simplifying Boolean expressions can make the reasoning easier to check. Rereading lecture notes alone is not considered enough practice for this type of problem.
+
+Sources: computer_logic_experiences.txt, data_structures_exam_advice.txt, programming_study_advice.txt, operating_systems_experiences.txt
+
+Top retrieved chunk: computer_logic_experiences.txt (distance: 0.7845)
+  Students describe Computer Logic and Design as a course that connects Boolean algebra with physical digital circuits. Early topics often include binary numbers, logic gates, truth tables, Boolean expr
+
+----------------------------------------------------------------------
+
+[3] What problems commonly occur during software engineering group projects?
+
+Expected:
+  Common problems include coordination failures, uneven workloads, integration errors when team members work on separate branches without agreeing on interfaces, and scope creep where optional features take priority over required functionality.
+
+System answer:
+  According to the context excerpts, the following problems commonly occur during software engineering group projects:
+
+1. Coordination problems, such as unclear responsibilities, deadlines, and interfaces.
+2. Uneven workloads, where one member may complete most of the implementation while others contribute late or submit work that does not integrate.
+3. Integration problems, which appear when team members work on separate branches without agreeing on data formats or function interfaces.
+4. Version control problems, which occur when team members work directly on the same branch.
+5. Scope control issues, where teams spend too much time adding optional features while required functionality remains incomplete.
+6. Communication problems, such as not informing the group early enough when a task becomes blocked.
+7. Inconsistent naming, input formats, environment variables, or dependency versions, which can cause features to fail when combined.
+
+Sources: software_engineering_projects.txt, group_project_advice.txt, programming_study_advice.txt
+
+Top retrieved chunk: software_engineering_projects.txt (distance: 0.6593)
+  Students often report that the hardest part of a software engineering project is coordination rather than programming. A team can contain capable developers and still struggle if responsibilities, dea
+
+----------------------------------------------------------------------
+
+[4] What advice do students give for balancing coursework with an internship?
+
+Expected:
+  Students recommend avoiding multiple project-heavy courses in the same semester, using weekly time blocks to protect study time, starting assignments early to absorb unexpected work tasks, and communicating scheduling needs to supervisors and classmates in advance.
+
+System answer:
+  Students give the following advice for balancing coursework with an internship: 
+
+1. Avoid taking several project-heavy courses at the same time.
+2. Review previous syllabi to identify courses with weekly programming assignments, group projects, or large final deliverables.
+3. Use weekly time blocks to protect study time and schedule specific periods for lectures, assignments, interview preparation, exercise, and rest.
+4. Start assignments early, as unexpected work tasks or technical bugs can remove the only remaining study period before a deadline.
+5. Communicate early with supervisors and project teammates to avoid scheduling conflicts and notify classmates of work obligations that may affect group meetings.
+6. Maintain sleep and recovery time, as a schedule that depends on repeated late nights can reduce concentration, programming accuracy, and exam performance.
+
+Sources: internship_course_balance.txt, software_engineering_projects.txt, course_registration_advice.txt, group_project_advice.txt
+
+Top retrieved chunk: internship_course_balance.txt (distance: 0.8796)
+  Students who combine an internship with computer science courses often report that time management becomes more important than total motivation. Work, lectures, assignments, commuting, and meetings ca
+
+----------------------------------------------------------------------
+
+[5] Which parking garage is best for biology students?
+
+Expected:
+  The available documents do not provide enough information to answer this question.
+
+System answer:
+  The available documents do not provide enough information to answer this question.
+
+Sources: course_registration_advice.txt, internship_course_balance.txt, group_project_advice.txt, operating_systems_experiences.txt
+
+Top retrieved chunk: course_registration_advice.txt (distance: 1.5204)
+  Students recommend checking prerequisites and degree requirements before registration opens. A course may appear available in the schedule but still require a specific prerequisite, laboratory section
+
+----------------------------------------------------------------------
+

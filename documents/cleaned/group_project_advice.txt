@@ -1,13 +1,13 @@
-title: Advice for CS Group Projects
-source: Locally created synthetic sample document based on common computer science student experiences
-topic: How to work effectively in computer science group projects
+title: Group Project Advice for Computing Students
+source: Locally created sample document based on common university group project experiences
+topic: Group Projects
 
-Group projects in CS courses require skills that are not taught in any lecture: coordination, negotiation, and accountability. Many students find them frustrating at first because the success of the project depends on people outside their own control. Having a plan for collaboration from the first meeting reduces that frustration significantly.
+Students recommend discussing expectations at the beginning of a group project. The team should agree on communication channels, meeting times, task ownership, coding conventions, and how missed deadlines will be handled.
 
-Dividing work by module or feature rather than by task type tends to produce better results. Giving one person full ownership of a component, including writing tests and documentation for it, is more efficient than splitting design, coding, and testing among three different people. Ownership creates accountability and reduces the time spent on handoffs.
+Large tasks should be divided into smaller deliverables with clear acceptance criteria. Saying that one person owns the backend is too broad. Assigning a specific endpoint, database function, test, or documentation section makes progress easier to verify.
 
-Using a shared repository correctly is non-negotiable. Everyone should push changes at least once a day during active development periods, and no one should work for three days in isolation and then try to merge everything at once. Small, frequent commits with clear messages make it easier to identify what changed and where a bug was introduced.
+Version control problems are common when team members work directly on the same branch. Students recommend creating separate branches, making focused commits, and reviewing changes before merging them into the main branch.
 
-Addressing issues with team members early prevents bigger problems. If someone consistently misses check-ins or submits incomplete work, talking about it directly during the project is far better than waiting until peer evaluation. Most instructors expect some friction in group projects and appreciate teams that manage it maturely.
+Communication should happen before a task becomes blocked. A student who cannot complete an assignment should tell the group early enough for the team to adjust the plan. Waiting until the deadline transfers the problem to everyone else.
 
-A shared document for meeting notes, decisions, and open questions is one of the simplest things a team can do to stay organized. When disagreements come up about what was agreed upon, a written record resolves them quickly and keeps the team focused on building rather than relitigating old discussions.
+Teams should also reserve time for integration and testing. Features that work separately may fail when combined because of inconsistent names, input formats, environment variables, or dependency versions.

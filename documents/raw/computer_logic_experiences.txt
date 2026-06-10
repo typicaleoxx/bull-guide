@@ -1,13 +1,13 @@
-title: Student Experiences with Computer Logic
-source: Locally created synthetic sample document based on common computer science student experiences
-topic: Learning Boolean logic, circuits, and digital design
+title: Computer Logic and Design Student Experiences
+source: Locally created sample document based on common digital logic course experiences
+topic: Computer Logic and Design
 
-Computer Logic, sometimes called Digital Logic or Logic Design, introduces how hardware works at a low level. The course covers Boolean algebra, logic gates, truth tables, Karnaugh maps, combinational circuits, and often sequential circuits like flip-flops and state machines. Students who plan to study computer architecture or embedded systems find this course especially relevant.
+Students describe Computer Logic and Design as a course that connects Boolean algebra with physical digital circuits. Early topics often include binary numbers, logic gates, truth tables, Boolean expressions, and simplification.
 
-The biggest early challenge is connecting algebra to physical circuits. Knowing that AND, OR, and NOT gates correspond to multiplication, addition, and complement in Boolean algebra is a starting point, but students need practice building and simplifying circuits before that connection feels automatic. Karnaugh maps are a tool that many students underestimate until exam time.
+Boolean simplification is a common source of mistakes. Students may know individual identities but apply them incorrectly when several variables are involved. Writing one transformation per line makes the reasoning easier to check.
 
-Lab sections vary by school, but most require students to build and test circuits using simulation software or physical breadboards. Paying attention during lab, even when it feels repetitive, helps reinforce concepts that can seem abstract from lecture alone.
+Karnaugh maps can make simplification faster, but students sometimes group cells incorrectly. Valid groups must contain powers of two, may wrap around the edges, and should be as large as possible. Students recommend checking the simplified result against the original truth table.
 
-Sequential circuits tend to be the hardest part for most students. State machine diagrams require you to think about behavior over time, which is a different skill from the combinational logic covered earlier in the course. Drawing clean state diagrams and converting them to truth tables is worth practicing well before the relevant exam.
+Sequential circuits are often harder than combinational circuits because outputs depend on both current inputs and stored state. Flip flops, registers, counters, and state machines require students to track changes across clock cycles.
 
-Students recommend forming a group specifically for homework problems in this course. Many circuit problems have multiple valid solutions, and comparing your design with a classmate often reveals simpler approaches you would not find by working alone.
+For exams, students recommend practicing complete problems that move from a verbal requirement to a truth table, simplified expression, and circuit diagram. Rereading lecture notes alone does not provide enough practice for this type of problem.
